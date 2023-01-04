@@ -1,0 +1,12 @@
+- name: Install Node
+  command: brew install node
+  tags:
+    - node
+- name: Install NVM
+  command: brew install nvm
+  tags:
+    - node
+- name: Install Node 14
+  shell: nvm install 14
+  tags:
+    - node

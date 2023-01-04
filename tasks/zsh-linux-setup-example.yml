@@ -1,0 +1,22 @@
+- hosts: localhost
+  become: true
+  pre_tasks:
+    - name: Update cache
+      apt:
+        update_cache: true
+      tags:
+        - zsh
+        - node
+  tasks:
+    - name: Install zsh
+      apt: name=zsh
+      tags:
+        - zsh
+    - name: Change shell
+      shell: chsh -s `which zsh`
+      tags:
+        - zsh
+    - name: Install ohmyzsh
+      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+      tags:
+        - zsh

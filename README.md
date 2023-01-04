@@ -1,2 +1,3 @@
-# dev_setup
- Setup new machine automagically
+# Automagic Dev Setup
+
+🪄✨ Setup new machine automagically 🪄✨
