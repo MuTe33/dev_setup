@@ -2,8 +2,8 @@
   community.general.homebrew:
     name: zsh
     state: present
-    tags:
-      - zsh
+  tags:
+    - zsh
 - name: Make ZSH default shell
   command: chsh -s /bin/zsh
   tags:
