@@ -1,9 +1,5 @@
 - hosts: all
   become: true
   tasks:
-    - name: Am I running on Mac OS X?
-      fail:
-      msg: Target host is not running Mac OS X
-      when: ansible_distribution != 'MacOSX'
     - include: tasks/zsh-setup.yml
     - include: tasks/node-setup.yml
