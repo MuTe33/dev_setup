@@ -15,4 +15,4 @@ jobs:
         uses: actions/checkout@v2.4.0
 
       - name: Test the playbook
-          run: ansible-playbook main.yml
+        run: ansible-playbook main.yml
