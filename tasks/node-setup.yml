@@ -4,9 +4,11 @@
     - node
 - name: Install nvm
   ansible.builtin.shell: >
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | zsh
   args:
-    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+    creates: "~/.nvm/nvm.sh"
+  tags:
+    - node
 - name: Install Node 14
   shell: nvm install 14
   tags:
