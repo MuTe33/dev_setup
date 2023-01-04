@@ -1,7 +1,5 @@
 - name: Install ZSH
-  community.general.homebrew:
-    name: zsh
-    state: present
+  command: brew install zsh
   tags:
     - zsh
 - name: Make ZSH default shell
