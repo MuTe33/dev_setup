@@ -2,10 +2,10 @@
   command: brew install zsh
   tags:
     - zsh
-# - name: Make ZSH default shell
-#   command: chsh -s /bin/zsh
-#   tags:
-#     - zsh
+- name: Make ZSH default shell
+  command: chsh -s /bin/zsh
+  tags:
+    - zsh
 - name: Install OhMyZsh
   command: curl -L https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
   tags:
