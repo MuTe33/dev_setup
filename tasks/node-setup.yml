@@ -10,6 +10,6 @@
   tags:
     - node
 - name: Install Node 14
-  shell: usr/bin/zsh -c nvm install 14
+  shell: /bin/zsh -c nvm install 14
   tags:
     - node
